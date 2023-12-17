@@ -1,0 +1,148 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'HelveticaNeueCyr', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 979px;
+    height: 701px;
+    background: #181818;
+    display: flex;
+    overflow: hidden;
+}
+.left {
+	border: 1px solid white;
+    width: 452px;
+    height: 100%;
+    background: url("img/bg-img.png") no-repeat;
+    text-align: center;
+    padding-top: 272px;
+}
+.left h1.title {
+	color: #fff;
+	font-size: 35px;
+	font-weight: 700;
+	font-style: normal;
+	font-family: 'HelveticaNeueCyr';
+}
+.h1 {
+	color: white;
+}
+.left p.desc {
+	width: 278px;
+	color: #E1BB97;
+	font-size: 12px;
+	font-weight: 400;
+	font-style: normal;
+	margin: 20px auto 30px;
+	text-align: center;
+}
+.btn {
+	width: 330px;
+	height: 53px;
+	font-weight: 500;
+	font-size: 22px;
+	border: 1px solid #E1BB97;
+	border-radius: 26.5px;
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+}	
+.container .right {
+	width: calc(979px - 452px);
+    height: 699;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+.right h2.title {
+	font-size: 35px;
+	display: block;
+} 
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+a .a1:hover {
+	background: url("img/G+.svg") no-repeat;
+}
+.a2 {
+	background: url("img/facebook.svg") no-repeat; 
+	background-position: 17px;
+}
+.caption {
+	color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input {
+	width: 328px;
+	height: 50px;
+	border-radius: 25.5px;
+	border: 1px solid #E1BB97;
+	background: transparent;
+	color: #7C6957;
+	padding-left: 40px;
+	margin: 15px;
+}
+.input1 {
+	background-image: url(./img/email.png);
+	background-repeat: no-repeat;
+	background-position: 15px;
+}
+.input1::placeholder { 
+	color: #7C6957;
+	position: absolute; 
+	left: 40px;
+	gap: 40px;
+}
+.input2 {
+	background-image: url(./img/lock.png);
+	background-repeat: no-repeat;
+	background-position: 15px;
+}
+.input2::placeholder { 
+	color: #7C6957;
+	position: absolute; 
+	left: 40px;
+}
+.btn2 {
+	width: 328px;
+	height: 53px;	
+	border: 2px solid #E1BB97;
+	border-radius: 26.5px;
+	background-color: #E1BB97;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 700;
+}
+.btn2:hover {
+	background: #fff;
+	border: 1px solid white;
+	color: #000;
+	transition: all 0.9s ease;
+}
+.forgot {
+ 	color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
