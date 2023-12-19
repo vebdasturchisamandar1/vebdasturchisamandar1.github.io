@@ -91,6 +91,7 @@ body {
 
 a img:hover {
     transform: rotate(45deg)scale(1.2);
+    transition: all 0.4s;
 }
 
 a .a1:hover {
