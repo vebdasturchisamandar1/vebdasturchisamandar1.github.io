@@ -1,0 +1,351 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	height: 100vh;
+	padding-left: 150px;
+	background: url("img/Mask.png") no-repeat;
+	background-size: 100%;
+}
+.box3 {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	right: 0;
+}
+.box4 {
+	width: 700px;
+	height: 100vh;
+	background: url("img/Ellipse 1.png") no-repeat;
+	background-size: 800px;
+	position: absolute;
+	right: 0;
+}
+.box3 .img1 {
+	width: 629px;
+	height: 100vh;
+	position: absolute;
+	right: 0;
+}
+.img2 {
+	margin-top: 40px;
+}
+.box1 {
+	width: 100%;
+	height: 100vh;
+	background-size: 300px;
+	
+}
+.box2 {
+	padding-top: 200px;
+}
+.p1 {
+	color: #E15252;
+	font-family: TT Hoves;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 0%; /* 0px */
+	margin-bottom: 20px;
+}
+.p2 {
+	color: #333;
+	font-family: TT Hoves;
+	font-size: 47px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 100.5%;
+	margin-bottom: 27px;
+}
+.p3 {
+	color: #333;
+	font-family: TT Hoves;
+	font-size: 14px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	margin-bottom: 29px;
+}
+.btn1 {
+	width: 130px;
+	height: 34px;
+	border: none;
+	border-radius: 42px;
+	background: #E15252;
+	color: #FFF;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	cursor: pointer;
+}
+.container2 {
+	width: 100%;
+	height: 100vh;
+	text-align: center;
+}
+.box5 {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.box7 {
+	width: 500px;
+	height: 200px;
+	background: #F2F2F2;
+	padding-top: 5%;	
+}
+.p4 {
+	color:  #333;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 0%; /* 0px */
+}
+.p5 {
+	margin-top: 40px;
+	color: #E15252;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%; /* 18px */
+}
+.p6 {
+	color: #333;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 26px; /* 144.444% */
+}
+.box8 {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-top: 30px;
+}
+.box9,
+.box10,
+.box11,
+.box12 {
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 40px;
+}
+.img {
+	width: 200px;
+	height: 200px;
+	background-size: 180px;
+	margin: 10px 10px 10px -10px;
+	
+}
+.p13,
+.p14,
+.p15,
+.p16 {
+	width: 240px;
+	height: 220px;
+	background: url("img/Ellipse 3.svg") no-repeat;
+	background-size: 220px;
+}
+.btn2 {
+	width: 140px;
+	height: 40px;
+	border: none;
+	border-radius: 42px;
+	background: #E15252;
+	box-shadow: 0px 4px 20px 0px rgba(225, 82, 82, 0.50);
+	color: #fff;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.container3 {
+	width: 100%;
+	height: 100vh;
+	background-image: url("img/Mask.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #E15252;
+	text-align: center;
+}	
+.box13 {
+	width: 900px;
+	height: 500px;
+	background-color: white;
+	border-top-right-radius: 40px;
+	border-top-left-radius: 40px;
+}
+.box14 {
+	width: 100%;
+	height: 85.7vh;
+	display: flex;
+	align-items: self-end;
+	justify-content: center;
+}
+.p8 {
+	color: #FFF;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 64px;
+	font-style: normal;
+	font-weight: 700;
+/*	line-height: 0%; /* 0px */*/
+}
+.p9 {
+	color:#333;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%; /* 18px */
+}
+.img3 {
+	position: absolute;
+	margin-left: -450px;
+}
+.p10 {
+	color: #333;
+	font-family: Vampiro One;
+	font-size: 46px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 100%; /* 46px */
+	margin-left: 265px;
+	margin-top: 50px;
+}
+.p12 {
+	width: 90px;
+	height: 2px;
+	background-color: black;
+	background: red;
+	margin-left: 440px;
+	margin-top: 10px;
+}
+.p11 {
+	width: 325px;
+	text-align: left;
+	margin-left: 440px;
+	margin-top: 80px;
+}
+.btn3 {
+	width: 203px;
+	height: 46px;
+	border: none;
+	border-radius: 42px;
+	color: #FFF;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	background: #E15252;
+	margin-left: 184px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.container4 {
+	width: 100%;
+	height: 100vh;
+	background: url("img/Mask.png");
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.box16 {
+	width: 900px;
+	height: 548px;
+	background-color: #E15252;
+	border-radius: 0px 0px 50px 50px;
+	background: #E15252;
+	text-align: center;
+}
+.box17 {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.p17 {
+	margin-top: 100px;
+	color: #FFF;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 44px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 0%; /* 0px */
+
+}
+.p18 {
+	margin-top: 30px;
+	color: #333;
+	text-align: center;
+	font-family: TT Hoves;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 100%; /* 18px */
+}
+.form1 {
+	width: 300px;
+	padding-left: 90px;
+	margin-top: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.form1 input {
+	outline: none;
+	padding: 10px;
+	width: 300px;
+	height: 40px;
+	margin-bottom: 10px;
+	border-radius: 40px;
+	border: none;
+}
+.form1 .input1 {
+	border: 2px solid white;
+	width: 150px;
+	background: transparent;
+}
+.form2 {
+	width: 500px;
+	text-align: left;
+	margin-top: -185px;
+	margin-left: 400px;
+}
+.p20 {
+	margin: 20px 0 20px 0;
+}
+.p19 img,
+.p20 img,
+.p21 img {
+	width: 20px;
+	margin: 10px 10px -4px 0;
+}
+.p19,
+.p20,
+.p21 {
+	color: white;
+}
+.container5 {
+	width: 100%;
+	height: 92px;
+	background-color: #ccc;
+}
