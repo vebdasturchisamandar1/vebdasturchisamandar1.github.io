@@ -1,0 +1,16 @@
+<svg width="610" height="500" viewBox="0 0 610 500" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_0_6906)">
+<rect width="610" height="500" fill="#F6F7FA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M321 234C321 242.84 313.84 250 305 250C296.16 250 289 242.84 289 234C289 225.16 296.16 218 305 218C313.84 218 321 225.16 321 234ZM273 274C273 263.36 294.32 258 305 258C315.68 258 337 263.36 337 274V282H273V274Z" fill="#CAD1E1"/>
+<rect width="610" height="500" fill="url(#pattern0)"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_0_6906" transform="matrix(0.0625 0 0 0.07625 0 -0.11)"/>
+</pattern>
+<clipPath id="clip0_0_6906">
+<rect width="610" height="500" fill="white"/>
+</clipPath>
+<image id="image0_0_6906" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAABVJREFUOBFjYBgFoyEwGgKjIQAJAQAEEAABvmNTIgAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

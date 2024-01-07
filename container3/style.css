@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Neutral-4: #95A1BB;
+    --h4: 500 24px/28px Rubik, sans-serif;
+    --Text: #36394;
+    --link: 500 12px/20px Rubik, sans-serif;
+    --p1: 400 16px/22px Rubik, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    background: url("img/Picture.svg") no-repeat;
+}
+
+.box1 {
+    width: 100%;
+    height: 500px;
+    background: url("img/Left.svg") no-repeat;
+    background-position: left;
+}
+
+.box2 {
+    width: 100%;
+    height: 500px;
+    background: url("img/Right.svg") no-repeat;
+    background-position: right;
+}
+
+.box3 {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box4 {
+    width: 100%;
+    text-align: left;
+}
+
+.span1 {
+    width: 80px;
+    height: 8px;
+}
+
+.span1 .a2 {
+    width: 8px;
+    height: 8px;
+    background-color: blue;
+}
