@@ -1,0 +1,16 @@
+<svg width="1400" height="700" viewBox="0 0 1400 700" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_21677_4946)">
+<rect width="1400" height="700" fill="#F6F7FA"/>
+<path d="M708 326L693 346L704.4 361.2L698 366C691.24 357 680 342 680 342L656 374H744L708 326Z" fill="#CAD1E1"/>
+<rect width="1400" height="700" fill="url(#pattern0)"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_21677_4946" transform="matrix(0.0625 0 0 0.125 0 -0.5)"/>
+</pattern>
+<clipPath id="clip0_21677_4946">
+<rect width="1400" height="700" fill="white"/>
+</clipPath>
+<image id="image0_21677_4946" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAABVJREFUOBFjYBgFoyEwGgKjIQAJAQAEEAABvmNTIgAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
