@@ -60,6 +60,7 @@
 
 .btn1:hover {
     background-color: var(--Primary);
+    transition: all 0.3s;
 }
 
 .h6 {
@@ -121,6 +122,7 @@
     border: 1px solid var(--Primary, #6E38F7);
     background: transparent;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 .link {
