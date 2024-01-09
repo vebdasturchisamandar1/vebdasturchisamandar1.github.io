@@ -25,7 +25,7 @@
 }
 
 .container {
-    width: 1400px;
+    width: 100%;
     height: 800px;
     padding-top: 70px;
     background: url("img/Picture.svg") no-repeat right;
@@ -47,7 +47,7 @@
 }
 
 .link-box {
-    width: 1400px;
+    width: 100%;
     height: 36px;
     display: flex;
     flex-direction: row;
@@ -102,7 +102,15 @@ a {
 }
 
 .container4 {
-    margin-left: 230px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-self: center;
+}
+
+.container5 {
+    width: 940px;
+    margin: 0 auto;
 }
 
 .h1 {
