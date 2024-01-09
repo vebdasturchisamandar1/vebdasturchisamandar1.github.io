@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --h1: 500 36px/43px Rubik, sans-serif;
+    --Text: #363940;
+    --Neutral-4: #95A1BB;
+    --p1: 400 16px/22px Rubik, sans-serif;
+    --link: 500 12px/20px Rubik, sans-serif;
+    --h6: 500 18px/22px Rubik, sans-serif;
+    --oq: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containe13 {
+    width: 100%;
+    height: 583px;
+}
+
+.container13 {
+    width: 100%;
+    height: 583px;
+    padding-top: 100px;
+}
+
+.h1 {
+    text-align: center;
+    font: var(--h1);
+    color: var(--Text);
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    align-items: ;
+    flex-direction: row;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.left {
+    width: 460px;
+    height: 300px;
+    background: url(img/Picture4.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 218px 30px 30px;
+}
+
+.h6 {
+    font: var(--h6);
+    color: var(--Text);
+}
+
+.link {
+    text-decoration: none;
+    font: var(--link);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    color: var(--Neutral-4);
+}
+
+.center {
+    width: 220px;
+    height: 231px;
+    text-align: left;
+}
+
+.right {
+    width: 220px;
+    height: 231px;
+    text-align: left;
+}
+
+.p1 {
+    font: var(--p1);
+    color: var(--Text);
+    margin-top: 20px;
+    font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.link2 {
+    font: var(--link);
+    margin-top: 10px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color: var(--Neutral-4);
+}
