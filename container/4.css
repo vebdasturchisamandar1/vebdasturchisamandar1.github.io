@@ -72,20 +72,19 @@
     width: 80px;
     height: 8px;
     margin-top: 50px;
+    display: flex;
+    gap: 10px;
 }
 
-.btn2,
-.btn3,
-.btn4,
-.btn5,
-.btn6 {
+.link {
     width: 8px;
     height: 8px;
     border-radius: 15px;
-    background-color: #00f;
+    background-color: #ccc;
     border: none;
+    cursor: pointer;
 }
 
-.btn2:hover {
-    background-color: aqua;
+.link:focus {
+    background-color: #00f;
 }
