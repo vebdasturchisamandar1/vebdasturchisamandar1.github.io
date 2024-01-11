@@ -41,7 +41,8 @@
         height: 500px;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        margin-right: -830px;
+        align-items: center;
     }
     
     .h4 {
@@ -60,4 +61,14 @@
         font: var(--p1);
         color: var(--Text);
         margin-top: 22px;
+    }
+    
+    .box6 {
+        /* width: 80px; */
+        height: 8px;
+    }
+    
+    .btn {
+        width: 8px;
+        height: 8px;
     }
