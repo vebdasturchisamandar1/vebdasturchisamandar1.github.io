@@ -38,13 +38,12 @@
     padding-right: 40px;
 }
 
-.img1 {
-    margin-bottom: 25px;
-}
+.img1 {}
 
 .h4 {
     font: var(--h4);
     color: var(--Text);
+    margin-top: 25px;
 }
 
 .p1 {
