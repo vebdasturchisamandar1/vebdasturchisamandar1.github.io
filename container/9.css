@@ -98,7 +98,7 @@
     text-align: center;
 }
 
-.btn {
+.btn2 {
     width: 8px;
     height: 8px;
     background-color: #ccc;
@@ -106,7 +106,7 @@
     border-radius: 15px;
 }
 
-.btn:hover {
+.btn2:hover {
     background-color: blue;
 }
 
