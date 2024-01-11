@@ -1,90 +1,63 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-:root {
-    --Neutral-4: #95A1BB;
-    --h4: 500 24px/28px Rubik, sans-serif;
-    --Text: #363940;
-    --link: 500 12px/20px Rubik, sans-serif;
-    --p1: 400 16px/22px Rubik, sans-serif;
-    --blue: #00f;
-}
-
-.header10 {
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.containers6 {
-    width: 100%;
-    height: 503px;
-}
-
-.container6 {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 100px;
-}
-
-.box {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.h4 {
-    font: var(--h4);
-    color: var(--Text);
-    margin-top: 25px;
-}
-
-.p1 {
-    font: var(--p1);
-    color: var(--Neutral-4);
-    margin-top: 11px;
-}
-
-.p2 {
-    font: var(--p1);
-    color: var(--Text);
-    margin-top: 22px;
-}
-
-.img2 {
-    margin-top: 50px;
-}
-
-.box4 {
-    width: 80px;
-    height: 8px;
-    margin-top: 50px;
-    display: flex;
-    gap: 10px;
-}
-
-.link {
-    width: 8px;
-    height: 8px;
-    border-radius: 15px;
-    background-color: #ccc;
-    border: none;
-    cursor: pointer;
-}
-
-.link:focus {
-    background-color: #00f;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+     :root {
+        --Neutral-4: #95A1BB;
+        --h4: 500 24px/28px Rubik, sans-serif;
+        --Text: #363940;
+        --link: 500 12px/20px Rubik, sans-serif;
+        --p1: 400 16px/22px Rubik, sans-serif;
+        --blue: #00f;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: 500px;
+        background: url("img/Picture2.svg") no-repeat;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .box2 {
+        width: 100%;
+        height: 500px;
+        background: url("img/Left.svg") no-repeat;
+        background-position: left center;
+    }
+    
+    .box3 {
+        width: 100%;
+        height: 500px;
+        background: url("img/right.svg") no-repeat;
+        background-position: right center;
+    }
+    
+    .box4 {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .h4 {
+        font: var(--h4);
+        color: var(--Text);
+        margin-top: 25px;
+    }
+    
+    .p1 {
+        font: var(--p1);
+        color: var(--Neutral-4);
+        margin-top: 11px;
+    }
+    
+    .p2 {
+        font: var(--p1);
+        color: var(--Text);
+        margin-top: 22px;
+    }
