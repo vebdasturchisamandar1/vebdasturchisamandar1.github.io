@@ -1,0 +1,16 @@
+<svg width="460" height="320" viewBox="0 0 460 320" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_0_8050)">
+<rect width="460" height="320" fill="#F6F7FA"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M238 152C238 156.42 234.42 160 230 160C225.58 160 222 156.42 222 152C222 147.58 225.58 144 230 144C234.42 144 238 147.58 238 152ZM214 172C214 166.68 224.66 164 230 164C235.34 164 246 166.68 246 172V176H214V172Z" fill="#CAD1E1"/>
+<rect width="460" height="320" fill="url(#pattern0)"/>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_0_8050" transform="matrix(0.0625 0 0 0.0898438 0 -0.21875)"/>
+</pattern>
+<clipPath id="clip0_0_8050">
+<rect width="460" height="320" fill="white"/>
+</clipPath>
+<image id="image0_0_8050" width="16" height="16" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGOfPtRkwAAABVJREFUOBFjYBgFoyEwGgKjIQAJAQAEEAABvmNTIgAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>

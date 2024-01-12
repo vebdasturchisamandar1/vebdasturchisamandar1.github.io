@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --h1: 500 36px/43px Rubik, sans-serif;
+    --h4: 500 24px/28px Rubik, sans-serif;
+    --p2: 500 18px/22px Rubik, sans-serif;
+    --p1: 400 16px/22px Rubik, sans-serif;
+    --p3: 400 14px/22px Rubik, sans-serif;
+    --link: 500 12px/22px Rubik, sans-serif;
+    --primary-color: #6E38F7;
+    --Neutral-4: #95A1BB;
+    --Text: #363940;
+    --Neutral-2: #E1E5EE;
+    --Neutral-1: #F6F7FA;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containe9 {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 617px;
+    display: flex;
+    justify-content: center;
+}
+
+.container8 {
+    max-width: 100%;
+    height: 617px;
+    text-align: center;
+    padding-top: 100px;
+    background: var(--Neutral-1, #F6F7FA);
+}
+
+.header12 {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.box2 {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 45px;
+    margin-top: -35px;
+    gap: 10px;
+}
+
+.h1 {
+    font: var(--h1);
+    color: var(--Text);
+}
+
+.p1 {
+    font: var(--p1);
+    color: var(--Neutral-4);
+    margin-top: 20px;
+}
+
+.p2 {
+    font: var(--p2);
+    color: var(--Text);
+}
+
+.box3 {
+    /* width: 530px; */
+    /* height: 270px; */
+    background: url("img/Graph.svg") no-repeat;
+    background-position: 0px 85px;
+}
+
+.box4 {
+    width: 530px;
+    height: 109px;
+    background: url("img/Graph\ \(2\).svg") no-repeat;
+    /* background-position: 00px -200px; */
+    margin-top: -181px;
+    position: absolute;
+}
+
+.p3 {
+    width: 530px;
+    height: 1px;
+    background: var(--Neutral-2);
+    margin-bottom: 40px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 0;
+}
+
+.p4 {
+    width: 530px;
+    height: 1px;
+    background-color: var(--Neutral-2);
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 0;
+}
+
+.box6 {
+    width: 147px;
+    height: 52px;
+    margin-left: 240px;
+    margin-top: -30px;
+}
+
+.box7 {
+    margin-left: 306px;
+    margin-top: 7px;
+}
+
+.box8 {
+    width: 147px;
+    height: 42px;
+    background-color: var(--Text);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box9 {
+    width: 16px;
+    height: 16px;
+    border-radius: 15px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box10 {
+    width: 6px;
+    height: 6px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.p5 {
+    color: white;
+    font: var(--p3);
+}
+
+.box11 {
+    margin-top: -5px;
+}
+
+.box12 {
+    display: flex;
+    flex-direction: row;
+    gap: 79px;
+    padding-top: 17px;
+}
+
+.box13 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.p6 {
+    font: var(--p3);
+    color: var(--Neutral-4);
+}
+
+.box14 {
+    width: 101px;
+    height: 101px;
+    background: url("img/Oval\ 2.svg");
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50px;
+}
+
+.p7 {
+    font: var(--p3);
+    color: var(--primary-color);
+    margin: 47px 57px 32px 16px;
+}
+
+.box18 {
+    width: 50.5px;
+    height: 86.32162px;
+    background: url("img/Oval.svg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.p8 {
+    font: var(--p3);
+    color: white;
+}
+
+.container10 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 39px;
+}
+
+.box15 {
+    width: 140px;
+    height: 119px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.container11 {
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    gap: 20px;
+}
+
+.p9 {
+    font: var(--p1);
+    color: var(--Text);
+}
+
+.p10 {
+    font: var(--p3);
+    color: var(--Neutral-4);
+}
+
+.box16 {
+    width: 140px;
+    height: 119px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.box17 {
+    width: 140px;
+    height: 119px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}

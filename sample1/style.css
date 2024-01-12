@@ -1,0 +1,159 @@
+ @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ :root {
+     --default-font: 'Rubik', sans-serif;
+     --primary-color: #6E38F7;
+     --text-color: #363940;
+     --netural-color: #95A1BB;
+     --text-ligth: #fff;
+     --link-font: 500 12px/20px Rubik, sans-serif;
+     --title-font: 500 58px/68px Rubik, sans-serif;
+     --desc-font: 400 12px/14px Rubik, sans-serif;
+ }
+ 
+ iframe {
+     width: 100%;
+     height: auto;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: var(--default-font);
+ }
+ 
+ .container {
+     width: 943px;
+     margin: 0 auto;
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ .text-dark {
+     color: var(--text-color);
+ }
+ 
+ .text-primary {
+     color: var(--primary-color);
+ }
+ 
+ .bg-primary {
+     color: var(--text-ligth);
+     background: var(--primary-color) !important;
+     border: 1px solid !important;
+ }
+ 
+ .bg-ligth {
+     background: transparent;
+     border: 1px solid var(--primary-color) !important;
+     background: var(--text-ligth) !important;
+ }
+ 
+ header.header {
+     max-width: 1400px;
+     margin: 0 auto;
+ }
+ 
+ .btn {
+     background: transparent;
+     border: none;
+     outline: none;
+     font-feature-settings: 'clig' off, 'liga' off;
+     font: var(--link-font);
+     letter-spacing: 2px;
+     cursor: pointer;
+ }
+ /* navbar start */
+ 
+ .navbar {
+     width: 100%;
+     margin-top: 50px;
+ }
+ 
+ .navbar-box {
+     width: 100%;
+     height: 76px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+ 
+ .left-navs {
+     display: flex;
+     align-items: center;
+     gap: 44px;
+ }
+ 
+ .list {
+     width: 357px;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .right-navs {
+     width: 136px;
+     display: flex;
+     justify-content: space-between;
+ }
+ 
+ .link {
+     font-feature-settings: 'clig' off, 'liga' off;
+     letter-spacing: 2px;
+     font: var(--link-font);
+     text-transform: uppercase;
+ }
+ /* navbar end */
+ /* hero start */
+ 
+ .hero {
+     width: 100%;
+     height: 674px;
+     background: url(./img/BG.svg) no-repeat;
+     background-position: right 16px;
+ }
+ 
+ .hero-box {
+     padding-top: 135px;
+ }
+ 
+ h1.title {
+     width: 344px;
+     color: var(--text-color);
+     font-feature-settings: 'clig' off, 'liga' off;
+     font: var(--title-font);
+ }
+ 
+ .buttons {
+     display: flex;
+     gap: 24px;
+     margin-top: 38px;
+ }
+ 
+ .buttons button {
+     width: 157px;
+     height: 46px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 4px;
+     text-transform: uppercase;
+ }
+ 
+ p.desc {
+     color: var(--neutral-4, #95A1BB);
+     font-feature-settings: 'clig' off, 'liga' off;
+     font: var(--desc-font);
+     margin: 36px 0 161px;
+ }
+ 
+ .scroll {
+     text-transform: uppercase;
+ }
+ /* hero end */
+ 
+ .box {
+     width: 100%;
+     height: 522px;
+ }
