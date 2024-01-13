@@ -60,7 +60,7 @@
     
     .box2:hover {
         border: 1px solid var(--primary-color);
-        box-shadow: black 1px 1px 10px;
+        box-shadow: black 0.5px 0.5px 3px, black 0.5px 0.5px 3px;
     }
     
     .line {
@@ -155,7 +155,6 @@
     
     .btn1:hover {
         background: var(--primary-color);
-        box-shadow: 1px 1px 5px black, -1px -1px 5px black;
     }
     
     .btn1:hover .link1 {
