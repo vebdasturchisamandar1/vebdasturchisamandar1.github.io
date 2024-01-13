@@ -60,7 +60,7 @@
     
     .box2:hover {
         border: 1px solid var(--primary-color);
-        box-shadow: black 0.5px 0.5px 3px, black 0.5px 0.5px 3px;
+        /* box-shadow: black 0.5px 0.5px 3px, black 0.5px 0.5px 3px; */
     }
     
     .line {

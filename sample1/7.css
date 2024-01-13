@@ -85,20 +85,44 @@
 .img2 {
     width: 48px;
     height: 48px;
-    margin: 118px 90px;
-    position: absolute;
 }
 
 .img3 {
     width: 48px;
-    height: 48x;
-    position: absolute;
-    margin: 309px 240px;
+    height: 48px;
 }
 
 .img4 {
     width: 48px;
     height: 48px;
+}
+
+.btn1 {
+    width: 48px;
+    height: 48px;
+    margin: 118px 90px;
+    position: absolute;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn2 {
+    position: absolute;
+    margin: 309px 240px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.btn2:hover .box2 {
+    background-color: var(--primary-color)
+}
+
+.btn3 {
     position: absolute;
     margin: 55px 522px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
 }
