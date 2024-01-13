@@ -49,7 +49,8 @@
     flex-shrink: 0;
     border: none;
     border-radius: 4px;
-    background: var(--Primary, #6E38F7);
+    background: transparent;
+    border: 1px solid var(--Neutral-4);
     transition: all 0.3s;
     cursor: pointer;
 }
@@ -61,17 +62,18 @@
     flex-shrink: 0;
     border-radius: 4px;
     border: 1px solid var(--Neutral-4, #95A1BB);
-    background: transparent;
+    background: var(--primary-color);
 }
 
 button:hover a {
-    color: var(--Neutral-4);
+    color: white;
 }
 
 a {
     font: var(--link);
-    color: white;
+    color: var(--primary-color);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 2px;
+    transition: all 0.3s;
 }
