@@ -110,6 +110,10 @@
     background-color: blue;
 }
 
+.btn2:focus {
+    background-color: var(--Primary);
+}
+
 .btn1 {
     width: 8px;
     height: 8px;
