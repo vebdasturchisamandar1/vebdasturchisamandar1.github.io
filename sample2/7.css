@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --default-font: 'Rubik', sans-serif;
+    --Text: #363940;
+    --Neutral-4: #95A1BB;
+    --h1: 500 36px/43px Rubik, sans-serif;
+    --p: 500 16px/22px Rubik, sans-serif;
+    --a: 400 18px/22px Rubik, sans-serif;
+    --a1: 500 12px/20px Rubik, sans-serif;
+    --p2: 400 14px/22px Rubik, sans-serif;
+    --hs4: 500 24px/28px Rubik, sans-serif;
+    --Primary: #6E38F7;
+    --h6: 500 18px/22px Rubik, sans-serif;
+    --h2: 500 32px/38px Rubik, sans-serif;
+    --h3: 500 28px/34px Rubik, sans-serif;
+    --Neutral-1: #F6F7FA;
+    --Neutral-2: #E1E5EE;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container8 {
+    width: 100%;
+    height: 198px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bos1 {
+    width: 100%;
+    height: 198px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image1 {
+    width: 127px;
+    height: 42px;
+    background: url(img/logo\ \(1\).svg);
+    margin-top: -0px;
+}
+
+.image2 {
+    width: 162.613px;
+    height: 34.736px;
+    flex-shrink: 0;
+    background: url("img/Microsoft_logo_\(2012\).svg");
+    margin-left: 53.75px;
+}
+
+.image3 {
+    width: 148.131px;
+    height: 37.033px;
+    flex-shrink: 0;
+    background: url("img/logo\ \(2\).svg");
+    margin-top: -5px;
+    margin-left: 54.96px;
+}
+
+.image4 {
+    width: 169.821px;
+    height: 24.667px;
+    flex-shrink: 0;
+    background: url("img/logo\ \(3\).svg");
+    margin-left: 53.74px;
+}
+
+.image5 {
+    width: 115.767px;
+    height: 34.98px;
+    flex-shrink: 0;
+    background: url("img/logo\ \(4\).svg");
+    margin-top: 20px;
+    margin-left: 53.73px;
+}

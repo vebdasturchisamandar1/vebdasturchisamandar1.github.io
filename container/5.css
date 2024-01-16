@@ -58,7 +58,7 @@
 
 .box2:hover {
     border: 1px solid var(--Primary);
-    box-shadow: 1px 1px 5px black, 1px 1px 5px black;
+    box-shadow: 1px 1px 5px #000;
 }
 
 .btn1:hover .link4 {
