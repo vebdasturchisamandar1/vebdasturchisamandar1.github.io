@@ -72,20 +72,28 @@
     padding: 19px 20px;
 }
 
+.bos1:hover {
+    border: 1px solid var(--Primary, #6E38F7);
+}
+
 .bos2 {
     width: 940px;
-    height: 235px;
+    height: auto;
     flex-shrink: 0;
     border-radius: 4px;
-    border: 1px solid var(--Primary, #6E38F7);
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
     gap: 20px;
 }
 
+.bos2:hover {
+    border: 1px solid var(--Primary, #6E38F7);
+}
+
 .bos3 {
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: space-between;
 }
@@ -93,7 +101,7 @@
 .bos4 {
     display: flex;
     flex-direction: column;
-    justify-content: left;
+    justify-content: space-between;
     gap: 20px;
 }
 
@@ -105,6 +113,21 @@
 .ps1 {
     font: var(--p);
     color: var(--Text);
+    margin-top: 20px;
+}
+
+.ps3 {
+    font: var(--p);
+    color: var(--Text);
+    margin-top: 25px;
+    /* margin-left: 20px; */
+}
+
+.ps4 {
+    font: var(--p);
+    color: var(--Text);
+    /* margin-left: 20px; */
+    margin-top: 20px;
 }
 
 .bos5 {
@@ -119,6 +142,10 @@
     padding: 20px;
 }
 
+.bos5:hover {
+    border: 1px solid var(--Primary, #6E38F7);
+}
+
 .bos6 {
     width: 940px;
     height: 60px;
@@ -129,4 +156,18 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+.bos6:hover {
+    border: 1px solid var(--Primary, #6E38F7);
+}
+
+summary:focus~.bo6 a {
+    width: 20px;
+    height: 20px;
+    background: url("img/Minus.svg") no-repeat;
+}
+
+summary {
+    margin-left: 5px;
 }
