@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --df: Poppins;
+    --Main: #323137;
+    --active: #EDCA48;
+    --h1: 800 60px/72px Poppins, sans-serif;
+    --p1: 400 16px/28px Poppins, sans-serif;
+    --ps2: 400 20px/160% Poppins, sans-serif;
+}
+
+.container5 {
+    width: 100%;
+    height: 900px;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bos1 {
+    width: 100%;
+    padding: 0px 0 0px 0;
+}
+
+.ps1 {
+    color: var(--Main);
+    font: var(--h1);
+    margin-bottom: 50px;
+}
+
+.link-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn1 {
+    display: inline-flex;
+    padding: 9px 69px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 100px 0px 0px 100px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.btn1:focus {
+    background: var(--active, #EDCA48);
+}
+
+.btn2 {
+    display: inline-flex;
+    padding: 9px 49px;
+    align-items: flex-start;
+    gap: 10px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.btn2:focus {
+    background: var(--active, #EDCA48);
+}
+
+.btn3 {
+    display: inline-flex;
+    padding: 9px 49px;
+    align-items: flex-start;
+    gap: 10px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.btn3:focus {
+    background: var(--active, #EDCA48);
+}
+
+.btn4 {
+    display: inline-flex;
+    padding: 9px 54px;
+    align-items: flex-start;
+    gap: 10px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.btn4:focus {
+    background: var(--active, #EDCA48);
+}
+
+.btn5 {
+    width: 236px;
+    height: 36px;
+    border-radius: 00px 100px 100px 00px;
+    background: #F5F5F5;
+    border: none;
+}
+
+.btn5:focus {
+    background: var(--active, #EDCA48);
+}
+
+.bos2 {
+    width: 100%;
+    height: 637px;
+    /* padding: 50px; */
+    background: url("img/puzzle-dynamic-gradient\ 1.png")no-repeat;
+    background-position: right
+}
+
+.bos3 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 25px;
+}
+
+.ps2 {
+    font: var(--ps2);
+    text-decoration: none;
+    color: var(--Main);
+}
+
+.h1 {
+    color: var(--Main, #323137);
+    font-family: Poppins;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 60px */
+}

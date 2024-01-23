@@ -40,6 +40,7 @@
     display: flex;
     flex-direction: column;
     gap: 48px;
+    margin-top: 52px;
 }
 
 .top-image {
@@ -48,64 +49,89 @@
     flex-direction: row;
     gap: 48px;
     background-size: cover;
+    align-items: center;
 }
 
 .img1 {
-    width: 271px;
-    height: 301px;
-    flex-shrink: 0;
+    width: 331px;
+    height: 341px;
+    padding-top: 15px;
+}
+
+.img11 {
+    width: 281px;
+    height: 307px;
     background: url("img/image\ 8.png") no-repeat;
-    background-position-x: -250px;
-    border-bottom-right-radius: 15px;
+    background-size: cover;
     border-top-right-radius: 15px;
-    margin-top: 6px;
+    border-bottom-right-radius: 15px;
+    background-position-x: -250px;
 }
 
 .img2 {
-    width: 540px;
+    width: 550px;
     height: 307px;
-    flex-shrink: 0;
-    flex-shrink: 0;
-    background: url("img/image\ 7.png") no-repeat;
-    border-radius: 15px;
+}
+
+.img12 {
+    width: 546px;
+    height: 307px;
+    border-radius: 13px;
+    background: url(img/image\ 7.png) no-repeat;
+    background-size: cover;
 }
 
 .img3 {
-    width: 352px;
-    height: 307px;
-    flex-shrink: 0;
-    background: url("img/image\ 9.png") no-repeat;
-    border-bottom-left-radius: 15px;
+    width: 365px;
+    height: 315px;
+    background: url("img/image\ 9.png");
+    background-size: cover;
     border-top-left-radius: 15px;
-    background-position-x: -195px;
+    border-bottom-left-radius: 15px;
+    margin-left: 30px
+}
+
+.img13 {
+    width: 365px;
+    height: 307px;
 }
 
 .bottom-image {
     display: flex;
-    /* justify-content: center; */
-    gap: 90px;
+    justify-content: center;
+    gap: 70px;
+    align-items: center;
 }
 
+.img4 {
+    width: 565px;
+    height: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-/* .img4 {
-    width: 283px;
-    height: 341px;
-    background: url("img/image\ 10\ \(2\).png")no-repeat;
-} */
+.img14 {
+    width: 546px;
+    height: 307px;
+    border-radius: 13px;
+    background: url("img/image\ 9.png") no-repeat;
+    background-size: cover;
+}
 
 .img5 {
-    width: 545px;
-    height: 305px;
+    width: 562px;
+    height: 341px;
     flex-shrink: 0;
-    flex-shrink: 0;
-    background: url("img/image\ 9\ \(1\).png") no-repeat;
-    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.img6 {
-    width: 542px;
-    height: 305px;
-    flex-shrink: 0;
+.img15 {
+    width: 546px;
+    height: 307px;
     background: url("img/image\ 8.png") no-repeat;
-    border-radius: 15px;
+    background-size: cover;
+    border-radius: 13px;
 }

@@ -22,6 +22,8 @@ iframe {
     margin: 0 auto;
     display: flex;
     justify-content: center;
+    position: sticky;
+    z-index: 8;
 }
 
 .box1 {
