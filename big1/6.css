@@ -65,4 +65,12 @@
     border-radius: 8px;
     background: var(--active, #EDCA48);
     border: none;
+    cursor: pointer;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
 }

@@ -37,7 +37,8 @@
 .link-top {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 6px;
 }
 
 .btn1 {
@@ -110,10 +111,12 @@
     height: 637px;
     /* padding: 50px; */
     background: url("img/puzzle-dynamic-gradient\ 1.png")no-repeat;
-    background-position: right
+    background-position: right;
+    margin-top: 50px;
 }
 
 .bos3 {
+    width: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -122,6 +125,8 @@
 }
 
 .ps2 {
+    width: auto;
+    display: inline;
     font: var(--ps2);
     text-decoration: none;
     color: var(--Main);
