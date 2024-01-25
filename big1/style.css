@@ -46,3 +46,9 @@ iframe {
     text-decoration: none;
     text-transform: uppercase;
 }
+
+@media screen (max-width:325px) {
+    .box1 {
+        width: auto;
+    }
+}

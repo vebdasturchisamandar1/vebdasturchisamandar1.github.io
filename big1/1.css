@@ -72,3 +72,9 @@
     line-height: normal;
     text-transform: capitalize;
 }
+
+@media screen (ma) {
+    .bos1 {
+        width: auto;
+    }
+}
