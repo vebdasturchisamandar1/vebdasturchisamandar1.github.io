@@ -1,0 +1,53 @@
+$fontrubik:"Rubik";
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin beffore {
+    margin: 0;
+    opacity: 1;
+    color: white;
+}
+
+@mixin opz {
+    opacity: 1;
+    // position: absolute;
+    margin-right: -280px;
+    // z-index: -1;
+}
+
+@mixin btn {
+    background-position: center;
+    background-size: 20px;
+    transition: all 0.9s;
+    cursor: pointer;
+}
+
+@mixin fecebook {
+    width: 100px;
+    height: 70px;
+    @include center;
+    content: "";
+    font-family: $fontrubik;
+    transition: all 0.7s ease;
+    background-color: $blue;
+    @include opz;
+}
+
+@mixin telegram {
+    @mixin telegram;
+}
+
+@mixin youtube {
+    @mixin telegram;
+}
+
+@mixin buttons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
