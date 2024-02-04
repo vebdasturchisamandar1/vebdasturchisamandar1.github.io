@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-.header {
-    width: 100%;
+.hder {
+    width: 150px;
     height: 100vh;
+    position: fixed;
 }
 
-.header .buttons {
+.hder .buns {
     width: 100%;
     height: 100%;
     display: flex;
@@ -17,176 +18,153 @@
     align-items: center;
 }
 
-.header .buttons .button {
+.hder .buns .ben {
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-button {
-    width: 70px;
-    height: 70px;
-    transition: all 0.9s;
     overflow: hidden;
 }
 
-button:hover {
-    width: 100px;
-    height: 70px;
-    opacity: 1;
-    margin: 0;
+.ben a {
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin-left: 10px;
+    font: 500 16px/22px Rubik;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    /* border: 1px solid; */
+    transition: all 0.3s;
+}
+
+.ben a:hover {
+    width: 140px;
+}
+
+.vk img,
+.twitter img,
+.telegram img,
+.youtube img,
+.fecebook img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 9;
+}
+
+.twitter {
+    display: flex;
+    align-items: center;
+    color: #6e38d7;
+    text-shadow: #6e38d7 -1px 1px 1px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "twitter";
+        position: absolute;
+        margin-left: 200px;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+    &:hover::before {
+        margin-left: 40px;
+        opacity: 1;
+    }
+}
+
+.vk {
+    display: flex;
+    align-items: center;
+    color: #9999bb;
+    text-shadow: #9999BB -1px 1px 1px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "vk";
+        position: absolute;
+        margin-left: 200px;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+    &:hover::before {
+        margin-left: 40px;
+        opacity: 1;
+    }
 }
 
 .telegram {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 1px solid #158EBB;
-    background: url("img/telegram.png") no-repeat;
-    background-position: center;
-    background-size: 20px;
-    transition: all 0.9s;
-    cursor: pointer;
-}
-
-.telegram::before {
-    width: 100px;
-    height: 70px;
-    content: "";
-    font-family: "Rubik";
-    transition: all 0.7s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #158EBB;
-    margin: 0;
-    opacity: 1;
-    margin-right: -280px;
-}
-
-.telegram:hover::before {
-    margin: 0;
-    opacity: 1;
-    color: white;
-}
-
-.telegram::after {
-    content: "Telegram";
-    position: absolute;
-    opacity: 0;
-    color: white;
-    margin-left: -200px;
-    transition: all 1s ease;
-}
-
-.telegram:hover::after {
-    opacity: 1;
-    margin: 0;
-}
-
-.telegram:hover {
-    background-position: 120px;
+    color: dodgerblue;
+    text-shadow: dodgerblue -1px 1px 1px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "telegram";
+        position: absolute;
+        margin-left: 200px;
+        opacity: 0;
+        transition: all 0.3s;
+        /* transition-delay: 0.3s; */
+    }
+    &:hover::before {
+        margin-left: 40px;
+        opacity: 1;
+    }
 }
 
 .youtube {
+    display: flex;
+    align-items: center;
+    color: red;
+    text-shadow: red -1px 1px 1px;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #f00;
-    background: url("img/Youtube.svg") no-repeat;
-    background-position: center;
-    background-size: 20px;
-    transition: all 0.9s;
-    cursor: pointer;
-}
-
-.youtube::before {
-    width: 100px;
-    height: 70px;
-    content: "";
-    font-family: "Rubik";
-    transition: all 0.7s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f00;
-    opacity: 1;
-    margin-right: -280px;
-}
-
-.youtube:hover::before {
-    margin: 0;
-    opacity: 1;
-    color: white;
-}
-
-.youtube::after {
-    content: "YouTube";
-    position: absolute;
-    opacity: 0;
-    color: white;
-    margin-left: -200px;
-    transition: all 1s ease;
-}
-
-.youtube:hover::after {
-    opacity: 1;
-    margin: 0;
-}
-
-.youtube:hover {
-    background-position: 120px;
+    position: relative;
+    &::before {
+        content: "youtube";
+        position: absolute;
+        margin-left: 200px;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+    &:hover::before {
+        margin-left: 40px;
+        opacity: 1;
+    }
 }
 
 .fecebook {
     display: flex;
-    justify-content: center;
     align-items: center;
-    background: url("img/Facebook.svg") no-repeat;
-    background-position: center;
-    background-size: 20px;
-    transition: all 0.9s;
-    cursor: pointer;
-    border: 1px solid #6e38F7;
+    color: blue;
+    text-shadow: blue -1px 1px 1px;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        content: "fecebook";
+        position: absolute;
+        margin-left: 200px;
+        opacity: 0;
+        transition: all 0.6s;
+    }
+    &:hover::before {
+        margin-left: 40px;
+        opacity: 1;
+    }
 }
 
-.fecebook::before {
-    width: 100px;
-    height: 70px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    content: "";
-    font-family: "Rubik";
-    transition: all 0.7s ease;
-    background-color: #6e38F7;
-    opacity: 1;
-    margin-right: -280px;
+.ben a:hover img {
+    animation: anim1 0.8s linear infinite;
 }
 
-.fecebook:hover::before {
-    margin: 0;
-    opacity: 1;
-    color: white;
-}
-
-.fecebook::after {
-    content: "FECEBOOK";
-    position: absolute;
-    opacity: 0;
-    color: white;
-    margin-left: -200px;
-    transition: all 1s ease;
-}
-
-.fecebook:hover::after {
-    opacity: 1;
-    margin: 0;
-}
-
-.fecebook:hover {
-    background-position: 120px;
+@keyframes anim1 {
+    100%,
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.7);
+    }
 }
 
 

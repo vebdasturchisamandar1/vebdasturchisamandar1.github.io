@@ -43,7 +43,7 @@
 .image1 {
     width: 127px;
     height: 42px;
-    background: url(img/logo\ \(1\).svg);
+    /* background: url(img/logo\ \(1\).svg); */
     margin-top: -0px;
 }
 
@@ -51,7 +51,7 @@
     width: 162.613px;
     height: 34.736px;
     flex-shrink: 0;
-    background: url("img/Microsoft_logo_\(2012\).svg");
+    /* background: url("img/Microsoft_logo_\(2012\).svg"); */
     margin-left: 53.75px;
 }
 
@@ -59,7 +59,7 @@
     width: 148.131px;
     height: 37.033px;
     flex-shrink: 0;
-    background: url("img/logo\ \(2\).svg");
+    /* background: url("img/logo\ \(2\).svg"); */
     margin-top: -5px;
     margin-left: 54.96px;
 }
@@ -68,7 +68,7 @@
     width: 169.821px;
     height: 24.667px;
     flex-shrink: 0;
-    background: url("img/logo\ \(3\).svg");
+    /* background: url("img/logo\ \(3\).svg"); */
     margin-left: 53.74px;
 }
 
@@ -76,7 +76,25 @@
     width: 115.767px;
     height: 34.98px;
     flex-shrink: 0;
-    background: url("img/logo\ \(4\).svg");
+    /* background: url("img/logo\ \(4\).svg"); */
     margin-top: 20px;
     margin-left: 53.73px;
+}
+
+.image1:hover img,
+.image2:hover img,
+.image3:hover img,
+.image4:hover img,
+.image5:hover img {
+    animation: anim2 0.8s linear infinite;
+}
+
+@keyframes anim2 {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.7);
+    }
 }

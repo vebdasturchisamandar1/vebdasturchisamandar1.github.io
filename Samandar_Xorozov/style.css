@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.container1 {
+  width: 100%;
+  height: 100vh;
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.container1 .box1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: url("img/pexels-asad-photo-maldives-1450360.jpg") no-repeat;
+  background-size: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.container1 .h {
+  text-align: center;
+  font: 900 30px/30px Terminal, sans-serif;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.container1 .box2 {
+  width: 200px;
+  height: 350px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 .p1 {
+  color: white;
+  text-align: center;
+  font: 500 14px/20px Arial, sans-serif;
+}
+.container1 .div {
+  width: 227px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.container1 .div a {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: 900 16px/20px Arial;
+}
+.container1 .div1, .container1 .div2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+.container1 .div img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container1 .div a img:hover {
+  width: 50px;
+  height: 50px;
+  box-shadow: 1px 1px 3px white, -1px -1px 3px white;
+}
+.container1 .box3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.container1 .box6,
+.container1 .box7,
+.container1 .box8,
+.container1 .box9 {
+  width: 250px;
+  height: 350px;
+  border: 2px solid white;
+  color: blue;
+  text-align: center;
+  font: 500 16px/22px Arial, sans-serif;
+  padding: 10px;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+.container1 .h1 {
+  line-height: 24px;
+}
+
+.container2 {
+  width: 100%;
+  height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.container2 .bo1 {
+  width: 100%;
+  height: 100vh;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 50px 50px 8px white, inset -50px -50px 8px white;
+  gap: 40px;
+}
+.container2 .bo2 {
+  display: flex;
+  gap: 40px;
+}
+.container2 .bo3 {
+  display: flex;
+  gap: 40px;
+}
+.container2 .bo4,
+.container2 .bo5,
+.container2 .bo6,
+.container2 .bo7 {
+  width: 400px;
+  height: 200px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 20px;
+}
+.container2 .bo8 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.container2 .p2 {
+  color: white;
+}
+.container2 .bo9 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  animation: anim1 6s linear infinite;
+}
+@keyframes anim1 {
+  0%, 100% {
+    top: 0;
+    left: 0;
+    background-color: red;
+  }
+  25% {
+    top: 0;
+    left: 1298px;
+    background-color: yellow;
+    border-radius: 0;
+  }
+  50% {
+    top: 582px;
+    left: 1298px;
+    background-color: green;
+    border-radius: 50%;
+  }
+  75% {
+    top: 582px;
+    left: 0;
+    background-color: orange;
+    border-radius: 0;
+  }
+}
+
+.container3 {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+.container3 .bos1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.container3 .bos1 a img {
+  width: 400px;
+  height: 250px;
+  border: 1px solid yellow;
+  border-radius: 20px;
+}
+.container3 .bos1 a img:hover {
+  box-shadow: 2px 2px 2px #ccc, -2px -2px 1px #ccc, -2px 2px 2px #ccc, 2px -2px 2px #ccc;
+}
+.container3 .bos2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container3 .bos3 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.container3 .h4 {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
