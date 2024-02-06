@@ -12,6 +12,25 @@ iframe {
   height: auto;
 }
 
+.fixed {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  background: dodgerblue;
+  position: fixed;
+}
+
+.fixed a {
+  text-decoration: none;
+  color: white;
+  font: 900px 30px/22px Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 .contai1 {
   width: 100%;
   height: 100vh;
@@ -23,6 +42,7 @@ iframe {
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 80px;
 }
 .container1 .box1 {
   width: 100%;
@@ -48,11 +68,18 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 20px;
 }
 .container1 .p1 {
   color: white;
   text-align: center;
   font: 500 14px/20px Arial, sans-serif;
+}
+.container1 .p1 img {
+  width: 150px;
+  height: 150px;
+  border: 2px solid green;
+  border-radius: 50%;
 }
 .container1 .div {
   width: 227px;
@@ -61,24 +88,28 @@ iframe {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
 }
 .container1 .div a {
-  color: white;
+  width: 70px;
+  height: 70px;
   text-transform: uppercase;
   text-decoration: none;
   font: 900 16px/20px Arial;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
 }
 .container1 .div1, .container1 .div2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 40px;
+  gap: 20px;
 }
 .container1 .div img {
   width: 50px;
   height: 50px;
-  border: 1px solid white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -100,22 +131,14 @@ iframe {
   width: 250px;
   height: 350px;
   border: 1px solid white;
+  border-radius: 50px;
   padding: 10px;
   margin-top: 20px;
 }
-.container1 .box6,
-.container1 .box7,
-.container1 .box8,
-.container1 .box9 {
-  width: 250px;
-  height: 350px;
-  border: 2px solid white;
-  color: blue;
-  text-align: center;
-  font: 500 16px/22px Arial, sans-serif;
-  padding: 10px;
-  text-transform: uppercase;
-  overflow: hidden;
+.container1 .boxs7 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid white;
 }
 .container1 .h1 {
   line-height: 24px;
@@ -126,6 +149,15 @@ iframe {
 }
 
 @media screen and (max-width: 555px) {
+  .fixed {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    gap: 10px;
+  }
+  .fixed a {
+    font: 400 10px/22px Arial, sans-serif;
+  }
   .container1 {
     width: 100%;
   }
@@ -140,10 +172,6 @@ iframe {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-
-.container3 {
-  /* display: flex; */
 }
 
 .contain3 {
@@ -192,7 +220,6 @@ iframe {
 }
 
 .h4 {
-  position: absolute;
   text-align: center;
   text-transform: uppercase;
   font: 900 16px/20px Arial;
@@ -211,42 +238,46 @@ iframe {
   font: 900 16px/20px Arial;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 884px) {
   .contain4 {
     width: 100%;
-    height: 2800px;
+    height: 6800px;
     display: flex;
     justify-content: center;
   }
   .contain3 {
     width: 100%;
-    height: 2800px;
+    height: 6800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .bos1 {
     width: 100%;
-    height: 2700px;
+    height: 6700px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     background-color: black;
     padding-bottom: 20px;
     padding-top: 70px;
     gap: 20px;
   }
   .bos1 a {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: 400px;
   }
   .bos1 a img {
     width: 100%;
-    height: 100%;
-    position: relative;
+    height: 400px;
   }
-  .bos1 a:hover img {
-    width: 100%;
-    height: 100%;
+  .bos1 a:hover {
+    width: auto;
+  }
+  .bos2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 555px) {

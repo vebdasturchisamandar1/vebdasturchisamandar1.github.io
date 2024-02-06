@@ -30,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #cc0;
+    background-color: #000;
     position: absolute;
     gap: 30px;
 }
@@ -89,6 +89,20 @@
     .bo7 {
         width: 100%;
     }
+}
+
+.bo7 {
+    display: flex;
+    gap: 20px;
+}
+
+.bo7 a {
+    color: white;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin-right: 10px;
+    gap: 10px;
 }
 
 @media screen and (max-width:455px) {
