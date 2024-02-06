@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container7 {
+    width: 100%;
+    height: 705px;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+}
+
+.containe23 {
+    width: 100%;
+    height: 705px;
+    margin: 0 auto;
+    max-width: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bo1 {
+    width: 100%;
+    height: 705px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #cc0;
+    position: absolute;
+    gap: 30px;
+}
+
+.bo4,
+.bo5,
+.bo6,
+.bo7 {
+    width: 500px;
+    height: 250px;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.bo2 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.bo3 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+@media screen and (max-width:1024px) {
+    .container7 {
+        width: 100%;
+        height: 705px;
+    }
+    .containe23 {
+        width: 100%;
+        height: 705px;
+    }
+    .bo1 {
+        width: 100%;
+        height: 705px;
+        display: flex;
+        flex-direction: row;
+    }
+    .bo2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .bo3 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .bo4,
+    .bo5,
+    .bo6,
+    .bo7 {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:455px) {
+    .container7 {
+        width: 100%;
+        height: 705px;
+    }
+    .containe23 {
+        width: 100%;
+        height: 705px;
+        background-color: blue;
+        display: flex;
+    }
+    .bo1 {
+        width: 100%;
+        height: 705px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bo2 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bo3 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bo4,
+    .bo5,
+    .bo6,
+    .bo7 {
+        width: 100%;
+        height: 150px;
+        border: 2px solid white;
+        border-radius: 20px;
+        font: 400 8px/5px Rubik, sans-serif;
+        padding: 10px;
+        color: white;
+    }
+}

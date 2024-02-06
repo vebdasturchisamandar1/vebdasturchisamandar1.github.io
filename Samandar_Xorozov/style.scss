@@ -11,21 +11,29 @@ $font2: 500 16px/22px Arial,
 sans-serif;
 $white:white;
 $fonta: 900 16px/20px Arial;
-.container1 {
+iframe {
+    width: 100%;
+    height: auto;
+}
+
+.contai1 {
     width: 100%;
     height: 100vh;
     max-width: 1400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
     .box1 {
         width: 100%;
-        height: 100vh;
+        height: 602px;
         display: flex;
         justify-content: center;
-        background: url("img/pexels-asad-photo-maldives-1450360.jpg") no-repeat;
-        background-size: 100%;
+        background-color: black;
+        background-size: cover;
         flex-direction: column;
         align-items: center;
     }
@@ -85,7 +93,7 @@ $fonta: 900 16px/20px Arial;
     .div a img:hover {
         width: 50px;
         height: 50px;
-        box-shadow: 1px 1px 3px white, -1px -1px 3px white;
+        box-shadow: 2px 2px 3px white, -2px -2px 3px white, -2px 2px 3px white, 2px -2px 3px white;
     }
     .box3 {
         width: 100%;
@@ -93,6 +101,13 @@ $fonta: 900 16px/20px Arial;
         display: flex;
         justify-content: center;
         gap: 30px;
+    }
+    .boxs6 {
+        width: 250px;
+        height: 350px;
+        border: 1px solid white;
+        padding: 10px;
+        margin-top: 20px;
     }
     .box6,
     .box7,
@@ -110,119 +125,185 @@ $fonta: 900 16px/20px Arial;
     }
     .h1 {
         line-height: 24px;
+        color: blue;
+        font: 900 26px/22px Arial, sans-serif;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 
-.container2 {
+@media screen and (max-width:555px) {
+    .container1 {
+        width: 100%;
+        // height: 100vh;
+    }
+    .box1 {
+        background-size: contain;
+    }
+}
+
+.contain4 {
     width: 100%;
-    height: 100vh;
+    height: 2900px;
     max-width: 1400px;
     margin: 0 auto;
     display: flex;
-    align-items: center;
-    .bo1 {
-        width: 100%;
-        height: 100vh;
-        background-color: blue;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        box-shadow: inset 50px 50px 8px white, inset -50px -50px 8px white;
-        gap: 40px;
-    }
-    .bo2 {
-        display: flex;
-        gap: 40px;
-    }
-    .bo3 {
-        display: flex;
-        gap: 40px;
-    }
-    .bo4,
-    .bo5,
-    .bo6,
-    .bo7 {
-        width: 400px;
-        height: 200px;
-        border: 2px solid white;
-        padding: 10px;
-        border-radius: 20px;
-    }
-    .bo8 {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-    }
-    .p2 {
-        color: white;
-    }
-    .bo9 {
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        border-radius: 50%;
-        position: absolute;
-        animation: anim1 6s linear infinite;
-    }
-    @keyframes anim1 {
-        0%,
-        100% {
-            top: 0;
-            left: 0;
-            background-color: red;
-        }
-        25% {
-            top: 0;
-            left: 1298px;
-            background-color: yellow;
-            border-radius: 0;
-        }
-        50% {
-            top: 582px;
-            left: 1298px;
-            background-color: green;
-            border-radius: 50%;
-        }
-        75% {
-            top: 582px;
-            left: 0;
-            background-color: orange;
-            border-radius: 0;
-        }
-    }
+    justify-content: center;
 }
 
 .container3 {
+    /* display: flex; */
+}
+
+.contain3 {
     width: 100%;
-    height: 100%;
+    height: 2900px;
+    // position: absolute;
+}
+
+.bos1 {
+    width: 100%;
+    height: 2790px;
+    display: flex;
+    justify-content: space-around;
     background-color: black;
+}
+
+.bos1 a {
+    width: 420px;
+    height: 270px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50% 0 50% 0;
+    box-shadow: 2px 2px 2px white, -2px -2px 2px white, 2px -2px white, -2px 2px 2px white;
+}
+
+.bos1 a img {
+    width: 400px;
+    height: 250px;
+    border: 1px solid yellow;
+    border-radius: 50% 0 50% 0;
+    transition: all 0.3s;
+}
+
+.bos1 a img:hover {
+    width: 410px;
+    height: 260px;
+    box-shadow: 2px 2px 2px #ccc, -2px -2px 1px #ccc, -2px 2px 2px #ccc, 2px -2px 2px #ccc;
+}
+
+.bos2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.h4 {
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    font: $fonta;
+    color: blue;
+}
+
+.bose1 {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p5 {
+    font: $fonta;
+}
+
+@media screen and (max-width:1024px) {
+    .contain4 {
+        width: 100%;
+        height: 2800px;
+        display: flex;
+        justify-content: center;
+    }
+    .contain3 {
+        width: 100%;
+        height: 2800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
     .bos1 {
         width: 100%;
-        height: 100%;
+        height: 2700px;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        background-color: black;
+        padding-bottom: 20px;
+        padding-top: 70px;
+        gap: 20px;
+    }
+    .bos1 a {
+        width: 100%;
+        height: 100%;
     }
     .bos1 a img {
-        width: 400px;
-        height: 250px;
-        border: 1px solid yellow;
-        border-radius: 20px;
+        width: 100%;
+        height: 100%;
+        position: relative;
     }
-    .bos1 a img:hover {
-        box-shadow: 2px 2px 2px #ccc, -2px -2px 1px #ccc, -2px 2px 2px #ccc, 2px -2px 2px #ccc;
+    .bos1 a:hover img {
+        width: 100%;
+        height: 100%;
+        // position: relative;
     }
-    .bos2 {
+    a:hover {
+        // width: 100%;
+        // height: 100%;
+        // position: relative;
+    }
+}
+
+@media screen and (max-width:555px) {
+    .contain4 {
+        width: 100%;
+        height: 3400px;
         display: flex;
-        justify-content: center;
-        flex-direction: column;
     }
-    .bos3 {
+    .contain3 {
+        width: 100%;
+        height: 3400px;
+    }
+    .bos1 {
+        width: 100%;
+        height: 3310px;
         display: flex;
-        justify-content: center;
         flex-direction: column;
+        justify-content: center;
+        background-color: black;
     }
     .h4 {
-        text-align: center;
+        font: 400px 12px/22px Rubik, sans-serif;
+    }
+    .bos1 a {
+        width: 100%;
+        height: 180px;
+        border-radius: 0;
+    }
+    .bos1 a img {
+        width: 100%;
+        height: 180px;
+        border-radius: 0;
+    }
+    .bos1 a:hover img {
+        width: 100%;
+        height: 180px;
+    }
+    .bose1 {
+        width: 100%;
+        height: 90px;
+        position: relative;
     }
 }
