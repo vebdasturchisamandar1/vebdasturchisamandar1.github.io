@@ -40,7 +40,7 @@ iframe {
 .fixed a {
   text-decoration: none;
   color: white;
-  font: 900px 30px/22px Arial, sans-serif;
+  font: 900 14px/22px Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -78,11 +78,12 @@ iframe {
 .container1 .box2 {
   width: 200px;
   height: 350px;
-  border: 1px solid white;
+  background-color: #0c0a0a;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 20px;
+  box-shadow: 2px 2px 1px blue;
 }
 .container1 .p1 {
   color: white;
@@ -144,10 +145,11 @@ iframe {
 .container1 .boxs6 {
   width: 250px;
   height: 350px;
-  border: 1px solid white;
+  background-color: #0c0a0a;
   border-radius: 50px;
   padding: 10px;
   margin-top: 20px;
+  box-shadow: 2px 2px 1px red;
 }
 .container1 .h1 {
   line-height: 24px;
@@ -233,20 +235,20 @@ iframe {
 @media screen and (max-width: 884px) {
   .contain4 {
     width: 100%;
-    height: 6800px;
+    height: 7000px;
     display: flex;
     justify-content: center;
   }
   .contain3 {
     width: 100%;
-    height: 6800px;
+    height: 7000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .bos1 {
     width: 100%;
-    height: 6700px;
+    height: 6900px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -259,13 +261,22 @@ iframe {
   .bos1 a {
     width: auto;
     height: 400px;
+    box-shadow: 2px 10px 1px red;
   }
   .bos1 a img {
     width: 100%;
     height: 400px;
+    border: none;
   }
   .bos1 a:hover {
     width: auto;
+    height: 400px;
+    border: none;
+  }
+  .bos1 a:hover img {
+    width: 100%;
+    height: 400px;
+    border: none;
   }
   .bos2 {
     display: flex;
@@ -273,14 +284,15 @@ iframe {
     flex-direction: column;
   }
 }
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 555px) {
   .fixed {
     width: 100%;
     height: 80px;
-    gap: 10px;
+    gap: 15px;
   }
   .fixed a {
     font: 900 10px/22px Arial, sans-serif;
+    letter-spacing: 0;
   }
   .contain4 {
     width: 100%;
