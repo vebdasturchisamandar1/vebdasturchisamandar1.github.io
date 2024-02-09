@@ -35,6 +35,7 @@ iframe {
   gap: 30px;
   background: dodgerblue;
   position: fixed;
+  z-index: 99;
 }
 
 .fixed a {
@@ -83,7 +84,7 @@ iframe {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  box-shadow: 2px 2px 1px blue;
+  box-shadow: 2px 2px 1px blue, -1px -1px 1px rgb(31, 25, 25);
 }
 .container1 .p1 {
   color: white;
@@ -104,36 +105,78 @@ iframe {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  position: relative;
 }
-.container1 .div a {
-  width: 70px;
-  height: 70px;
-  text-transform: uppercase;
+.container1 .html {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.container1 .css {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.container1 .scss {
+  width: 60px;
+  height: 60px;
+  position: relative;
+}
+.container1 .div1 a, .container1 .div2 a {
+  width: 60px;
+  height: 60px;
+  font: 900 16px/22px Arial, sans-serif;
+  color: white;
   text-decoration: none;
-  font: 900 16px/20px Arial;
   display: flex;
-  justify-content: start;
   flex-direction: column;
   align-items: center;
+  background-color: red;
+  overflow: hidden;
+  transition: all 0.8s;
+}
+.container1 .div a::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 60px;
+  margin-top: -5px;
+  margin-left: -70px;
+  background-color: #11339b;
+  transform: rotate(0) skewY(45deg);
+  overflow: hidden;
+}
+.container1 .div a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  margin-left: -10px;
+  margin-top: -10px;
+  background-color: #1f1212;
+  transform: rotate(0) skewX(45deg);
+  overflow: hidden;
+}
+.container1 .div div {
+  width: 60px;
+  height: 60px;
+  font: 900 16px/22px Arial, sans-serif;
+  color: white;
+}
+.container1 .div1 div p, .container1 .div2 div p {
+  margin-top: -10px;
+}
+.container1 .div div:hover a {
+  margin-top: -30px;
+  box-shadow: -5px 30px 15px rgb(23, 23, 26);
 }
 .container1 .div1, .container1 .div2 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
-}
-.container1 .div img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-}
-.container1 .div a img:hover {
-  width: 50px;
-  height: 50px;
-  box-shadow: 2px 2px 3px white, -2px -2px 3px white, -2px 2px 3px white, 2px -2px 3px white;
+  gap: 20px;
+  position: absolute;
 }
 .container1 .box3 {
   width: 100%;
@@ -149,7 +192,7 @@ iframe {
   border-radius: 50px;
   padding: 10px;
   margin-top: 20px;
-  box-shadow: 2px 2px 1px red;
+  box-shadow: -2px -2px 1px red, 1px -1px 1px rgb(20, 20, 26);
 }
 .container1 .h1 {
   width: 100%;
@@ -161,6 +204,24 @@ iframe {
   text-transform: uppercase;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  animation: anim6 6s linear infinite;
+}
+@keyframes anim6 {
+  0% {
+    background-position: -450px;
+  }
+  25% {
+    background-position: -600px;
+  }
+  50% {
+    background-position: -700px;
+  }
+  75% {
+    background-position: -800px;
+  }
+  100% {
+    background-position: -900px;
+  }
 }
 
 .contain4 {
@@ -199,14 +260,14 @@ iframe {
 .bos1 a img {
   width: 380px;
   height: 250px;
-  border: 1px solid yellow;
+  border: 4px solid yellow;
   border-radius: 50% 0 50% 0;
   transition: all 0.3s;
 }
 
 .bos1 a img:hover {
   width: 100%;
-  height: 260px;
+  height: 100%;
   box-shadow: 2px 2px 2px #ccc, -2px -2px 1px #ccc, -2px 2px 2px #ccc, 2px -2px 2px #ccc;
 }
 

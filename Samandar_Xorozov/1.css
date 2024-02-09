@@ -41,9 +41,11 @@
 .bo7 {
     width: 500px;
     height: 250px;
-    border: 2px solid white;
+    border: 10px solid rgb(17, 11, 11);
     border-radius: 20px;
     padding: 20px;
+    background-color: #22f;
+    box-shadow: 10px 10px 10px rgb(29, 21, 21), 2px -2px 10px rgb(31, 23, 23), -2px 2px 10px rgb(16, 22, 22), -2px -2px 10px rgb(20, 36, 36);
 }
 
 .bo2 {
@@ -56,6 +58,29 @@
     display: flex;
     flex-direction: row;
     gap: 40px;
+}
+
+.bo7 a {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, #0f0e18 15%, #c52222 25%, #311466 60%, #44d418);
+    animation: anim8 2s linear infinite;
+    font: 900 12px/22px Arial, sans-serif;
+}
+
+@keyframes anim8 {
+    0% {
+        background-position: 100px;
+    }
+    50% {
+        background-position: 200px;
+    }
+    75% {
+        background-position: 300px;
+    }
+    100% {
+        background-position: 340px;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -92,13 +117,12 @@
 }
 
 .bo7 {
-    display: flex;
     gap: 20px;
 }
 
 .bo7 a {
     color: white;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     text-decoration: none;
     margin-right: 10px;

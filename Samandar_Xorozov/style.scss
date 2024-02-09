@@ -39,6 +39,7 @@ iframe {
     gap: 30px;
     background: dodgerblue;
     position: fixed;
+    z-index: 99;
 }
 
 .fixed a {
@@ -86,7 +87,7 @@ iframe {
         justify-content: center;
         align-items: center;
         border-radius: 20px;
-        box-shadow: 2px 2px 1px blue;
+        box-shadow: 2px 2px 1px blue, -1px -1px 1px rgb(31, 25, 25);
     }
     .p1 {
         color: $white;
@@ -107,40 +108,81 @@ iframe {
         justify-content: center;
         align-items: center;
         gap: 10px;
+        position: relative;
     }
-    .div a {
-        width: 70px;
-        height: 70px;
-        // border: 1px solid white;
-        text-transform: uppercase;
+    .html {
+        width: 60px;
+        height: 60px;
+        position: relative;
+    }
+    .css {
+        width: 60px;
+        height: 60px;
+        position: relative;
+    }
+    .scss {
+        width: 60px;
+        height: 60px;
+        position: relative;
+    }
+    .div1 a {
+        width: 60px;
+        height: 60px;
+        font: 900 16px/22px Arial, sans-serif;
+        color: white;
         text-decoration: none;
-        font: $fonta;
         display: flex;
-        justify-content: start;
         flex-direction: column;
         align-items: center;
+        background-color: red;
+        overflow: hidden;
+        transition: all 0.8s;
+    }
+    .div a::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 60px;
+        margin-top: -5px;
+        margin-left: -70px;
+        background-color: #11339b;
+        transform: rotate(0) skewY(45deg);
+        overflow: hidden;
+    }
+    .div a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        margin-left: -10px;
+        margin-top: -10px;
+        background-color: #1f1212;
+        transform: rotate(0) skewX(45deg);
+        overflow: hidden;
+    }
+    .div div {
+        width: 60px;
+        height: 60px;
+        font: 900 16px/22px Arial, sans-serif;
+        color: white;
+    }
+    .div1 div p {
+        margin-top: -10px;
+    }
+    .div div:hover a {
+        margin-top: -30px;
+        box-shadow: -5px 30px 15px rgb(23, 23, 26);
     }
     .div1 {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
         gap: 20px;
+        position: absolute;
     }
     .div2 {
         @extend .div1;
-    }
-    .div img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .div a img:hover {
-        width: 50px;
-        height: 50px;
-        box-shadow: 2px 2px 3px white, -2px -2px 3px white, -2px 2px 3px white, 2px -2px 3px white;
     }
     .box3 {
         width: 100%;
@@ -156,7 +198,7 @@ iframe {
         border-radius: 50px;
         padding: 10px;
         margin-top: 20px;
-        box-shadow: 2px 2px 1px red;
+        box-shadow: -2px -2px 1px red, 1px -1px 1px rgb(20, 20, 26);
     }
     .h1 {
         width: 100%;
@@ -168,6 +210,24 @@ iframe {
         text-transform: uppercase;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        animation: anim6 6s linear infinite;
+    }
+    @keyframes anim6 {
+        0% {
+            background-position: -450px;
+        }
+        25% {
+            background-position: -600px;
+        }
+        50% {
+            background-position: -700px;
+        }
+        75% {
+            background-position: -800px;
+        }
+        100% {
+            background-position: -900px;
+        }
     }
 }
 
@@ -208,14 +268,14 @@ iframe {
 .bos1 a img {
     width: 380px;
     height: 250px;
-    border: 1px solid yellow;
+    border: 4px solid yellow;
     border-radius: 50% 0 50% 0;
     transition: all 0.3s;
 }
 
 .bos1 a img:hover {
     width: 100%;
-    height: 260px;
+    height: 100%;
     box-shadow: 2px 2px 2px #ccc, -2px -2px 1px #ccc, -2px 2px 2px #ccc, 2px -2px 2px #ccc;
 }
 
