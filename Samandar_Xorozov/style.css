@@ -14,7 +14,7 @@ body::-webkit-scrollbar {
   width: 10px;
 }
 body::-webkit-scrollbar-track {
-  background-color: rgb(53, 52, 52);
+  background-color: rgb(207, 29, 29);
 }
 body::-webkit-scrollbar-thumb {
   background-color: white;
@@ -24,6 +24,12 @@ body::-webkit-scrollbar-thumb {
 iframe {
   width: 100%;
   height: auto;
+}
+
+.fix {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .fixed {
@@ -36,6 +42,8 @@ iframe {
   background: dodgerblue;
   position: fixed;
   z-index: 99;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .fixed a {
@@ -112,15 +120,24 @@ iframe {
   height: 60px;
   position: relative;
 }
+.container1 .html p {
+  color: #da881c;
+}
 .container1 .css {
   width: 60px;
   height: 60px;
   position: relative;
 }
+.container1 .css p {
+  color: dodgerblue;
+}
 .container1 .scss {
   width: 60px;
   height: 60px;
   position: relative;
+}
+.container1 .scss p {
+  color: rgb(241, 119, 176);
 }
 .container1 .div1 a, .container1 .div2 a {
   width: 60px;
@@ -131,9 +148,9 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: red;
   overflow: hidden;
   transition: all 0.8s;
+  background-color: #1f1d1d;
 }
 .container1 .div a::after {
   content: "";
@@ -142,9 +159,9 @@ iframe {
   height: 60px;
   margin-top: -5px;
   margin-left: -70px;
-  background-color: #11339b;
   transform: rotate(0) skewY(45deg);
   overflow: hidden;
+  background-color: #3b3a3a;
 }
 .container1 .div a::before {
   content: "";
@@ -165,10 +182,47 @@ iframe {
 }
 .container1 .div1 div p, .container1 .div2 div p {
   margin-top: -10px;
+  transition: all 0.8s;
 }
 .container1 .div div:hover a {
   margin-top: -30px;
   box-shadow: -5px 30px 15px rgb(23, 23, 26);
+}
+.container1 .html:hover a {
+  background-color: #dce923;
+}
+.container1 .html:hover a::before {
+  background-color: #c29b2f;
+}
+.container1 .html:hover a::after {
+  background-color: #757941;
+}
+.container1 .html:hover a p {
+  color: #fff;
+}
+.container1 .css:hover a {
+  background-color: #1e1bbb;
+}
+.container1 .css:hover a::before {
+  background-color: #4a85c9;
+}
+.container1 .css:hover a::after {
+  background-color: #322172;
+}
+.container1 .css:hover a p {
+  color: #fff;
+}
+.container1 .scss:hover a {
+  background-color: #bb1b7e;
+}
+.container1 .scss:hover a::before {
+  background-color: #c94aa9;
+}
+.container1 .scss:hover a::after {
+  background-color: #722164;
+}
+.container1 .scss:hover a p {
+  color: #fff;
 }
 .container1 .div1, .container1 .div2 {
   display: flex;

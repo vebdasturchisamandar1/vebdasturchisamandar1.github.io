@@ -11,7 +11,7 @@ body {
         width: 10px;
     }
     &::-webkit-scrollbar-track {
-        background-color: rgb(53, 52, 52);
+        background-color: rgb(207, 29, 29);
     }
     &::-webkit-scrollbar-thumb {
         background-color: white;
@@ -30,6 +30,12 @@ iframe {
     height: auto;
 }
 
+.fix {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .fixed {
     width: 100%;
     height: 80px;
@@ -40,6 +46,8 @@ iframe {
     background: dodgerblue;
     position: fixed;
     z-index: 99;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .fixed a {
@@ -115,15 +123,24 @@ iframe {
         height: 60px;
         position: relative;
     }
+    .html p {
+        color: #da881c;
+    }
     .css {
         width: 60px;
         height: 60px;
         position: relative;
     }
+    .css p {
+        color: dodgerblue;
+    }
     .scss {
         width: 60px;
         height: 60px;
         position: relative;
+    }
+    .scss p {
+        color: rgb(241, 119, 176);
     }
     .div1 a {
         width: 60px;
@@ -134,9 +151,9 @@ iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: red;
         overflow: hidden;
         transition: all 0.8s;
+        background-color: #1f1d1d;
     }
     .div a::after {
         content: "";
@@ -145,9 +162,9 @@ iframe {
         height: 60px;
         margin-top: -5px;
         margin-left: -70px;
-        background-color: #11339b;
         transform: rotate(0) skewY(45deg);
         overflow: hidden;
+        background-color: #3b3a3a;
     }
     .div a::before {
         content: "";
@@ -168,10 +185,47 @@ iframe {
     }
     .div1 div p {
         margin-top: -10px;
+        transition: all 0.8s;
     }
     .div div:hover a {
         margin-top: -30px;
         box-shadow: -5px 30px 15px rgb(23, 23, 26);
+    }
+    .html:hover a {
+        background-color: #dce923;
+        &::before {
+            background-color: #c29b2f;
+        }
+        &::after {
+            background-color: #757941;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    .css:hover a {
+        background-color: #1e1bbb;
+        &::before {
+            background-color: #4a85c9;
+        }
+        &::after {
+            background-color: #322172;
+        }
+        p {
+            color: #fff;
+        }
+    }
+    .scss:hover a {
+        background-color: #bb1b7e;
+        &::before {
+            background-color: #c94aa9;
+        }
+        &::after {
+            background-color: #722164;
+        }
+        p {
+            color: #fff;
+        }
     }
     .div1 {
         display: flex;

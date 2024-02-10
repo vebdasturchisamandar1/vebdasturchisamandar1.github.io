@@ -33,6 +33,8 @@
     background-color: #000;
     position: absolute;
     gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .bo4,
