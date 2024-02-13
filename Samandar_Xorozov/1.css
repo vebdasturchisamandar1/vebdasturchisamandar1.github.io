@@ -62,7 +62,7 @@
     gap: 40px;
 }
 
-.bo7 a {
+.bo4 a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(45deg, #0f0e18 15%, #c52222 25%, #311466 60%, #44d418);
@@ -122,7 +122,7 @@
     gap: 20px;
 }
 
-.bo7 a {
+.bo4 a {
     color: white;
     display: inline-flex;
     align-items: center;
