@@ -19,12 +19,19 @@ body {
     }
 }
 
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 $font1: 500 14px/20px Arial,
 sans-serif;
 $font2: 500 16px/22px Arial,
 sans-serif;
 $white:white;
-$fonta: 900 16px/20px Arial;
+$fonta: 900 16px/20px Arial,
+sans-serif;
 iframe {
     width: 100%;
     height: auto;
@@ -39,23 +46,52 @@ iframe {
 .fixed {
     width: 100%;
     height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include center;
     gap: 30px;
-    background: dodgerblue;
+    background-image: linear-gradient(-23deg, #1b87a8 30%, #ddc4c4 50%, #dbdd69 70%);
     position: fixed;
     z-index: 99;
     max-width: 1400px;
     margin: 0 auto;
 }
 
-.fixed a {
+.fixed .a2 {
     text-decoration: none;
-    color: white;
+    background-image: linear-gradient(-23deg, #bd2c2c 20%, #2bd45e 40%, #1815bb 60%, #9cd343);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font: 900 14px/22px Arial, sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    animation: anim9 3s linear infinite;
+}
+
+.fixed .a3 {
+    @extend .a2;
+    animation: anim10 3s linear infinite;
+}
+
+.fixed .a4 {
+    @extend .a2;
+    animation: anim11 3s linear infinite;
+}
+
+@keyframes anim9 {
+    0% {
+        background-position: 130px 90px;
+    }
+}
+
+@keyframes anim10 {
+    0% {
+        background-position: 105px -110px;
+    }
+}
+
+@keyframes anim11 {
+    0% {
+        background-position: -90px 110px;
+    }
 }
 
 .contai1 {
@@ -73,16 +109,14 @@ iframe {
     .box1 {
         width: 100%;
         height: 602px;
-        display: flex;
-        justify-content: center;
+        @include center;
         background-color: black;
         background-size: cover;
         flex-direction: column;
-        align-items: center;
     }
     .h {
         text-align: center;
-        font: 900 30px/30px Terminal, sans-serif;
+        font: 900 30px/30px Arial, sans-serif;
         text-transform: uppercase;
         margin-top: 20px;
         margin-bottom: 10px;
@@ -91,53 +125,42 @@ iframe {
         width: 200px;
         height: 350px;
         background-color: #0c0a0a;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include center;
         border-radius: 20px;
         box-shadow: 2px 2px 1px blue, -1px -1px 1px rgb(31, 25, 25);
     }
     .p1 {
-        color: $white;
+        color: greenyellow;
         text-align: center;
-        font: $font1;
+        font: 500 16px/22px 'Rubik', sans-serif;
+        text-shadow: 0px 2px 10px greenyellow;
     }
     .p1 img {
         width: 150px;
         height: 150px;
-        border: 2px solid green;
+        border: 5px solid green;
         border-radius: 50%;
     }
     .div {
         width: 227px;
         height: 350px;
-        display: flex;
+        @include center;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         gap: 10px;
-        position: relative;
-    }
-    .html {
-        width: 60px;
-        height: 60px;
         position: relative;
     }
     .html p {
         color: #da881c;
     }
-    .css {
+    .html,
+    .css,
+    .scss {
         width: 60px;
         height: 60px;
         position: relative;
     }
     .css p {
         color: dodgerblue;
-    }
-    .scss {
-        width: 60px;
-        height: 60px;
-        position: relative;
     }
     .scss p {
         color: rgb(241, 119, 176);
@@ -192,12 +215,12 @@ iframe {
         box-shadow: -5px 30px 15px rgb(23, 23, 26);
     }
     .html:hover a {
-        background-color: #dce923;
+        background-color: #ceda28;
         &::before {
-            background-color: #c29b2f;
+            background-color: #ecfa6f;
         }
         &::after {
-            background-color: #757941;
+            background-color: #a5ad29;
         }
         p {
             color: #fff;
@@ -228,10 +251,8 @@ iframe {
         }
     }
     .div1 {
-        display: flex;
+        @include center;
         flex-direction: row;
-        align-items: center;
-        justify-content: center;
         gap: 20px;
         position: absolute;
     }
@@ -243,7 +264,64 @@ iframe {
         height: 100vh;
         display: flex;
         justify-content: center;
+        flex-direction: row;
         gap: 30px;
+    }
+    .box3-left {
+        @extend .boxs6;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 100px;
+        }
+    }
+    .figma {
+        width: 60px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+    }
+    .figma-left {}
+    .figma-right {}
+    .figma1 {
+        width: 30px;
+        height: 30px;
+        background-color: #E54A19;
+        border-radius: 50% 0 0 50%;
+    }
+    .figma2 {
+        width: 30px;
+        height: 30px;
+        background-color: #7C4Dff;
+        border-radius: 50% 0 0 50%;
+    }
+    .figma3 {
+        width: 30px;
+        height: 30px;
+        background-color: #66BB6A;
+        border-radius: 50% 0 50% 50%;
+    }
+    .figma4 {
+        width: 30px;
+        height: 30px;
+        background-color: #ff7043;
+        border-radius: 0 50% 50% 0%;
+    }
+    .figma5 {
+        width: 30px;
+        height: 30px;
+        background-color: #29b6f6;
+        border-radius: 50%;
+    }
+    .hl {
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase
+    }
+    .right {
+        @extend .boxs6;
     }
     .boxs6 {
         width: 250px;
@@ -305,26 +383,25 @@ iframe {
     height: 2790px;
     display: flex;
     justify-content: space-around;
-    background-color: black;
+    background-image: linear-gradient(34deg, #411c99 10%, #1fa535 90%);
 }
 
 .bos1 a {
     width: 400px;
     height: 270px;
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border: 3px solid white;
+    @include center;
     border-radius: 50% 0 50% 0;
-    box-shadow: 2px 2px 2px white, -2px -2px 2px white, 2px -2px white, -2px 2px 2px white;
+    box-shadow: 6px 6px 2px #413939, -6px -6px 2px #413939, 6px -6px 2px #413939, -6px 6px 2px #413939;
 }
 
 .bos1 a img {
     width: 380px;
     height: 250px;
-    border: 4px solid yellow;
+    border: 4px solid rgb(192, 14, 14);
     border-radius: 50% 0 50% 0;
     transition: all 0.3s;
+    box-shadow: 1px 1px 10px rgb(56, 29, 179);
 }
 
 .bos1 a img:hover {
@@ -344,16 +421,16 @@ iframe {
     // position: absolute;
     text-align: center;
     text-transform: uppercase;
-    font: $fonta;
-    color: blue;
+    font: 900 16px/22px 'Rubik', sans-serif;
+    color: rgb(197, 171, 25);
+    background-color: red;
 }
 
 .bose1 {
     width: 100%;
     height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
+    background-color: #3f25d4;
 }
 
 .p5 {
@@ -363,52 +440,54 @@ iframe {
 @media screen and (max-width:884px) {
     .contain4 {
         width: 100%;
-        height: 7000px;
+        height: 2100px;
         display: flex;
         justify-content: center;
     }
     .contain3 {
         width: 100%;
-        height: 7000px;
+        height: 2100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
     .bos1 {
         width: 100%;
-        height: 6900px;
+        height: 2000px;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: row;
         background-color: black;
         padding-bottom: 20px;
         padding-top: 70px;
-        gap: 20px;
         padding: 0 10px 0 10px;
     }
     .bos1 a {
-        width: auto;
-        height: 400px;
+        width: 250px;
+        height: 200px;
     }
     .bos1 a img {
-        width: 100%;
-        height: 400px;
+        width: 250px;
+        height: 200px;
         border: none;
     }
     .bos1 a:hover {
-        width: auto;
-        height: 400px;
+        width: 250px;
+        height: 200px;
         border: none;
     }
     .bos1 a:hover img {
-        width: 100%;
-        height: 400px;
+        width: 250px;
+        height: 200px;
         border: none;
     }
     .bos2 {
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        padding: 20px;
+    }
+    .box2 {
+        padding: 0 20px 0 20px;
     }
 }
 
@@ -418,9 +497,10 @@ iframe {
         height: 80px;
         gap: 15px;
     }
-    .fixed a {
-        font: 900 10px/22px Arial, sans-serif;
+    .fixed .a2 {
         letter-spacing: 0;
+        gap: 5px;
+        font: 900 12px/16px Arial;
     }
     .contain4 {
         width: 100%;
@@ -441,7 +521,7 @@ iframe {
         padding: 0 5px 0 5px;
     }
     .h4 {
-        font: 400px 12px/22px Rubik, sans-serif;
+        font: 400px 12px/22px 'Rubik', sans-serif;
     }
     .bos1 a {
         width: 100%;
@@ -464,5 +544,23 @@ iframe {
     .bose1 {
         width: 100%;
         height: 90px;
+    }
+    .bos2 {
+        padding: 10px;
+    }
+    .container1 {
+        width: 100%;
+        height: 1590px;
+    }
+    .container1 .box3 {
+        width: 100%;
+        height: 1900px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container1 .box1 {
+        width: 100%;
+        height: 1550px;
     }
 }
