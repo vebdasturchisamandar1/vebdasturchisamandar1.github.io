@@ -389,27 +389,33 @@ iframe {
 .bos1 a {
     width: 360px;
     height: 180px;
-    border: 3px solid white;
+    // border: 3px solid white;
     @include center;
     position: relative;
     overflow: hidden;
     // border-radius: 50% 0 50% 0;
-    box-shadow: 6px 6px 2px #413939, -6px -6px 2px #413939, 6px -6px 2px #413939, -6px 6px 2px #413939;
+    // box-shadow: 6px 6px 2px #413939, -6px -6px 2px #413939, 6px -6px 2px #413939, -6px 6px 2px #413939;
 }
 
 .bos1 a img {
-    position: absolute;
+    // width: 330px;
+    // height: 155px;
     border: 4px solid rgb(192, 14, 14);
     // border-radius: 50% 0 50% 0;
     transition: all 0.3s;
-    box-shadow: 1px 1px 10px rgb(56, 29, 179);
-    transform: scale(1.05);
+    transform: scale(0.23);
+    // box-shadow: 1px 1px 10px rgb(56, 29, 179);
 }
+
+.t3 {
+    transform: scale(2);
+}
+
+.t7 {}
 
 .bos1 a img:hover {
     // width: 100%;
     // height: 100%;
-    transform: scale(1.089);
     box-shadow: 2px 2px 2px #ccc, -2px -2px 1px #ccc, -2px 2px 2px #ccc, 2px -2px 2px #ccc;
 }
 
@@ -463,7 +469,6 @@ iframe {
         background-color: black;
         padding-bottom: 20px;
         padding-top: 70px;
-        padding: 0 10px 0 10px;
     }
     .bos1 a {
         width: 250px;
@@ -471,7 +476,7 @@ iframe {
         display: flex;
     }
     .bos1 a img {
-        transform: scale(0.7);
+        transform: scale(0.17);
         border: none;
     }
     .bos1 a:hover {
@@ -486,14 +491,14 @@ iframe {
     .bos2 {
         display: flex;
         justify-content: center;
-        padding: 20px;
+        padding: 10px;
     }
     .box2 {
         padding: 0 20px 0 20px;
     }
 }
 
-@media screen and (max-width:555px) {
+@media screen and (max-width:455px) {
     .fixed {
         width: 100%;
         height: 80px;
@@ -526,20 +531,17 @@ iframe {
         font: 400px 12px/22px 'Rubik', sans-serif;
     }
     .bos1 a {
-        width: 100%;
-        height: 220px;
+        transform: scale(1);
         border-radius: 0;
     }
     .bos1 a img {
-        transform: scale(1.34);
-        border-radius: 0;
+        transform: scale(0.19);
     }
     .bos1 a:hover img {
-        transform: scale(1.4);
+        transform: scale(0.194);
     }
     .bos1 a:hover {
-        width: 100%;
-        height: 220px;
+        transform: scale(1);
     }
     .bose1 {
         width: 100%;
